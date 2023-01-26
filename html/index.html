@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    SERVER_LOL
+  </title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="fondo">
+  <div class="container">
+    <header class="container-fluid p-4 text-center">
+      <a href="/">
+        <img src="../images/logo/logo_vector.svg" alt="League Of Legends">
+      </a>
+    </header>
+
+    <div>
+      <form id="mainForm" method="get">
+        <div class="row mb-3">
+          <label for="name" class="col-sm-2 col-xs-12 col-form-label">Nombre</label>
+          <div class="col-sm-10 col-xs-12">
+            <input id="name" type="text" class="form-control" placeholder="Inserte Nombre" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="selectPsjs" class="col-sm-2 col-xs-12 col-form-label">Personajes</label>
+          <div class="col-sm-10 col-xs-12">
+            <select id="selectPsjs" name="selectPsjs" class="form-select">
+              <option selected value="">Seleccione Personaje</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="selectRol" class="col-sm-2 col-xs-12 col-form-label">Rol</label>
+          <div class="col-sm-10 col-xs-12">
+            <select id="selectRol" name="selectRol" class="form-select">
+              <option selected value="">Seleccione Rol</option>
+              <option value="Tank">Tanque</option>
+              <option value="Fighter">Luchador</option>
+              <option value="Mage">Mago</option>
+              <option value="Support">Support</option>
+              <option value="Marksman">ADC</option>
+              <option value="Assassin">Asesino</option>
+            </select>
+          </div>
+        </div>
+
+        <!--Botonera-->
+        <div class="d-flex justify-content-evenly m-3">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="reset" class="btn btn-danger">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="psjs" class="row">
+    </div>
+  </div>
+</body>
+
+</html>
+<script src="logica.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

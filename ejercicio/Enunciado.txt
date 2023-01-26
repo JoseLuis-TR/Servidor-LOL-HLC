@@ -1,0 +1,31 @@
+Explicación del ejercicio.
+
+Se os da una aplicación web, hecha un poco "for fun", que simplemente muestra los personajes del League of Legends.
+En esta aplicación web, se puede escribir el nombre del personaje, y te mostraría su imagen junto con dos botones, uno para
+reproducir la "joke" que dice el personaje en el juego, y otro para reproducir su risa.
+
+Ahora mismo, tal y como está, la aplicación no funciona correctamente. ¿Por qué no funciona? Porque no hay un servidor
+que le esté suministrando al navegador los recursos necesarios para que la app funcione.
+
+Tu objetivo es hacer que esa aplicación funcione correctamente, estableciendo los entry-points necesarios en el lado del servidor.
+
+1º Establece un entry point para "/" que devuelva "index.html"
+	- Vas a tener que mirar dónde está almacenado ese index.html para acceder a la ruta correcta
+2º Una vez devuelvas index.html correctamente, mira en la consola del navegador, qué otras peticiones se realizan y satisface cada una de esas peticiones.
+3º Cuando esas peticiones queden resueltas y veas que la página principal se ve correctamente, usa la aplicación, comprueba todas las peticiones que se realizan, y satisface cada una de ellas hasta que la aplicación funcione correctamente en su totalidad.
+
+Extra
+4º Establece un entry-point para devolver un favicon.ico
+5º Establece un entry-point para imprimir por la consola del servidor el tipo de petición entrante (el método), la ruta de acceso y la fecha y hora a la que se realiza esa petición (se debe imprimir para todas las peticiones)
+6º Establece un entry-point para que cuando se intente acceder a un recurso que no existe, se devuelva una página 404. Page not found.
+	- Ese html lo vas a tener que codificar tú
+7º Establece un entry-point de gestión de errores en el servidor, que devuelva un código de error "Error interno del servidor".
+
+Puntuaciones:
+1º -> 1 puntos
+2º -> 2 puntos
+3º -> 3 puntos
+4º -> 1 punto
+5º -> 1 punto
+6º -> 1 punto
+7º -> 1 punto

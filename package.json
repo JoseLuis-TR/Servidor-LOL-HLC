@@ -1,0 +1,17 @@
+{
+  "name": "servidor_lol_joseluistr",
+  "version": "1.0.0",
+  "description": "Servidor para mostrar personajes del lol",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JoseLuis-TocinoRojo",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}

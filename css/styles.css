@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+*{
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+body.fondo {
+    background-color: whitesmoke;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.caja {
+    display: flex;
+    align-items: center;
+}
+
+.bolaVerde {
+    width: 20px;
+    height: 20px;
+    border: 1px solid green;
+    border-radius: 50%;
+    background-color: greenyellow;
+    margin: 10px;
+}
+
+.bolaRoja {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(165, 0, 0);
+    border-radius: 50%;
+    background-color: rgb(251, 127, 127);
+    margin: 10px;
+}
+
+.caja2 {
+    padding-left: 10px;
+}
+
+h1 {
+    text-align: center;
+}
